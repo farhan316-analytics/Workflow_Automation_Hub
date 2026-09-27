@@ -1,2 +1,2 @@
 report_date,revenue,orders,units_sold,average_order_value,average_units_per_order,unique_customers,revenue_growth_pct,order_growth_pct,alert_count,workflow_status
-2026-09-23,2762578.89,2270,4379,1217.0,1.93,1969,6.27,2.76,0,RUNNING
+2026-09-23,2762578.89,2270,4379,1217.0,1.93,1969,6.27,2.76,0,SUCCESS

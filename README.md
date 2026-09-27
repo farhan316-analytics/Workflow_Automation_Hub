@@ -89,6 +89,7 @@ This creates potential problems such as:
 - 🔍 Poor workflow traceability
 Workflow Automation Hub converts this process into an automated analytical workflow.
 🏗️ Core Architecture
+![Workflow Automation Hub Architecture](docs/screenshots/architecture.png)
 
 ### 📥 1. File Ingestion
 The ingestion module discovers incoming production sales files using:
@@ -101,6 +102,9 @@ test_
 are excluded from the normal production workflow.
 This prevents controlled test scenarios from contaminating production processing.
 ### 🔎 2. Data Validation
+
+![Data Validation](docs/screenshots/data-validation.png)
+
 The validation engine checks incoming files before they enter the analytical pipeline.
 Validation Checks
 - 📋 Required columns
@@ -171,6 +175,7 @@ revenue_per_unit
 
 Processed files are stored in:
 data/processed/
+
 
 ### 🐘 4. PostgreSQL Analytics Database
 The project uses PostgreSQL as the central analytical database.
@@ -258,6 +263,8 @@ created_at
 
 ### 📊 5. KPI Engine
 
+![KPI Engine](docs/screenshots/kpi-engine.png)
+
 The KPI engine automatically calculates daily business performance.
 💰 Revenue
 Total daily net sales.
@@ -279,6 +286,8 @@ Comparison of current revenue with the previous day.
 Comparison of current order volume with the previous day.
 
 ### 🚨 6. Business Rule Engine
+
+
 
 The business rule engine evaluates daily KPIs against predefined thresholds.
 🔴 Revenue Decline
@@ -346,6 +355,8 @@ The report includes:
 - 📝 Workflow status
 
 ### 📢 8. Notification Engine
+
+![Business Alert](docs/screenshots/business-alert.png)
 
 The notification engine generates an automated daily sales summary.
 Example:
@@ -527,6 +538,10 @@ The project includes controlled QA scenarios covering:
 - 🔄 Workflow reruns
 - 💥 Failure handling
 - 🔗 End-to-end execution
+
+## 📄 Automated Daily Report
+
+![Daily Automated Report](docs/screenshots/daily-report.png)
 
 ### 🏆 Final QA Result
 
